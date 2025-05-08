@@ -144,7 +144,7 @@ function removerAcentos(s) {
 
 function whatsappWeb(e) {
   let url = "https://api.whatsapp.com/send?phone=";
-  //let numero = '51999913990';
+  //let numero = '51 ';
   let numero = "51" + document.getElementById("txtcelularw").value.trim();
   let messje = "Quiero%20realizar%20un%20pedido";
   window.open(url + numero + "&text=" + messje, "_blank");
