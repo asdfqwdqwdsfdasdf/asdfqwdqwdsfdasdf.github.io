@@ -10,35 +10,48 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
     <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
+<div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+        <!-- Información de contacto -->
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:atencionalcliente@clinicafatima.com.pe">atencion@clinicafatima.com.pe</a>
+            <i class="bi bi-whatsapp ms-3"></i>
+            <a href="https://api.whatsapp.com/send?phone=51948325205&text=Hola,%20me%20gustaría%20agendar%20una%20cita%20médica,%20por%20favor." target="_blank">+51 948325205</a>
+        </div>
 
-    <!-- Barra de navegación (opcional) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-            <img src="/clinica-reservas/img/fotos-clinica/Imagotipo_para_web.png" alt=""  class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="especialidades.html">Especialidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reserva.html">Reserva</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="citas.html">Citas</a>
-                    </li>
+        <!-- Enlaces de redes sociales -->
+        <div class="d-none d-lg-flex social-links align-items-center">
+            <a href="https://web.facebook.com/ClinicaFatimaPe/" target="_blank" class="facebook ms-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/clinicafatimatrujillo/" target="_blank" class="instagram ms-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@clinicafatima1353" target="_blank" class="youtube ms-3"><i class="bi bi-youtube"></i></a>
+        </div>
+    </div>
+</div>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
+    <div class="container-fluid">
+        <img src="img/fotos-clinica/Imagotipo_para_web.png" alt="Imagotipo Clínica" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <!-- Agregamos ms-auto aquí -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="especialidades.html">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="citas.html">Citas</a>
                 </ul>
             </div>
         </div>

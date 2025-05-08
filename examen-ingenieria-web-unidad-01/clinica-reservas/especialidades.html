@@ -8,35 +8,48 @@
     <!-- CDN de Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
+    <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+        <!-- Información de contacto -->
+        <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:atencionalcliente@clinicafatima.com.pe">atencion@clinicafatima.com.pe</a>
+            <i class="bi bi-whatsapp ms-3"></i>
+            <a href="https://api.whatsapp.com/send?phone=51948325205&text=Hola,%20me%20gustaría%20agendar%20una%20cita%20médica,%20por%20favor." target="_blank">+51 948325205</a>
+        </div>
 
-    <!-- Barra de navegación (opcional) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
- 
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-            <img src="/clinica-reservas/img/fotos-clinica/Imagotipo_para_web.png" alt=""  class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="especialidades.html">Especialidades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="reserva.html">Reserva</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="citas.html">Citas</a>
-                    </li>
+        <!-- Enlaces de redes sociales -->
+        <div class="d-none d-lg-flex social-links align-items-center">
+            <a href="https://web.facebook.com/ClinicaFatimaPe/" target="_blank" class="facebook ms-3"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/clinicafatimatrujillo/" target="_blank" class="instagram ms-3"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.youtube.com/@clinicafatima1353" target="_blank" class="youtube ms-3"><i class="bi bi-youtube"></i></a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mt-5">
+    <div class="container-fluid">
+        <img src="img/fotos-clinica/Imagotipo_para_web.png" alt="Imagotipo Clínica" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto"> <!-- Agregamos ms-auto aquí -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="especialidades.html">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reserva</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="citas.html">Citas</a>
                 </ul>
             </div>
         </div>
@@ -52,42 +65,78 @@
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
 
-            <!-- Odontología -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/fotos-clinica/odontologia.png" class="card-img-top" alt="Odontología">
-                    <div class="card-body">
-                        <h5 class="card-title">Odontología</h5>
-                        <p class="card-text">Brindamos atención integral para la salud bucal. Desde limpiezas hasta tratamientos de ortodoncia y cirugía.</p>
-                        <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
-                    </div>
+        <!-- Cardiología -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/fotos-clinica/cardiologia.png" class="card-img-top" alt="Cardiología">
+                <div class="card-body">
+                    <h5 class="card-title">Cardiología</h5>
+                    <p class="card-text">Diagnóstico y tratamiento de enfermedades del corazón y vasos sanguíneos.</p>
+                    <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
                 </div>
             </div>
+        </div>
 
-            <!-- Fisioterapia -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/fotos-clinica/fisioterapia.png" class="card-img-top" alt="Fisioterapia">
-                    <div class="card-body">
-                        <h5 class="card-title">Fisioterapia</h5>
-                        <p class="card-text">Tratamientos para la rehabilitación de lesiones musculares y articulares, mejorando la movilidad y reduciendo el dolor.</p>
-                        <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
-                    </div>
+        <!-- Pediatría -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/fotos-clinica/pediatria.png" class="card-img-top" alt="Pediatría">
+                <div class="card-body">
+                    <h5 class="card-title">Pediatría</h5>
+                    <p class="card-text">Atención integral para niños desde el nacimiento hasta la adolescencia.</p>
+                    <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
                 </div>
             </div>
+        </div>
 
-            <!-- Farmacia -->
-            <div class="col">
-                <div class="card">
-                    <img src="img/fotos-clinica/farmacia.png" class="card-img-top" alt="Farmacia">
-                    <div class="card-body">
-                        <h5 class="card-title">Farmacia</h5>
-                        <p class="card-text">Ofrecemos asesoramiento y venta de medicamentos, además de servicios como la toma de presión arterial y control de glucosa.</p>
-                        <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
-                    </div>
+        <!-- Ginecología y Obstetricia -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/fotos-clinica/ginecologia.png" class="card-img-top" alt="Ginecología y Obstetricia">
+                <div class="card-body">
+                    <h5 class="card-title">Ginecología y Obstetricia</h5>
+                    <p class="card-text">Salud reproductiva femenina y control del embarazo.</p>
+                    <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
                 </div>
             </div>
+        </div>
 
+        <!-- Dermatología -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/fotos-clinica/dermatologia.png" class="card-img-top" alt="Dermatología">
+                <div class="card-body">
+                    <h5 class="card-title">Dermatología</h5>
+                    <p class="card-text">Diagnóstico y tratamiento de afecciones en piel, cabello y uñas.</p>
+                    <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Otorrinolaringología -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/fotos-clinica/otorrinolaringologia.png" class="card-img-top" alt="Otorrinolaringología">
+                <div class="card-body">
+                    <h5 class="card-title">Otorrinolaringología</h5>
+                    <p class="card-text">Especialistas en oído, nariz y garganta.</p>
+                    <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Traumatología -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="img/fotos-clinica/traumatologia.png" class="card-img-top" alt="Traumatología">
+                <div class="card-body">
+                    <h5 class="card-title">Traumatología</h5>
+                    <p class="card-text">Tratamiento de lesiones óseas, musculares y articulares.</p>
+                    <a href="reserva.html" class="btn btn-primary">Reservar cita</a>
+                </div>
+            </div>
+        </div>
+     
         </div>
     </div>
 
